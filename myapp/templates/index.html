@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <h1>
+        My to do list
+    </h1>
+    <form action="/" method="POST">
+        <input type="text" name="content" id="content">
+        <input type="submit" value="Add Task">
+    </form>
+    <ul>
+        {% for todo in todos %}
+        <li> {{ todo.text }} </li>
+        {% endfor %}
+    </ul>
+</html>
